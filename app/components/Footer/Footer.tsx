@@ -1,8 +1,7 @@
-import React from "react";
-import styles from "./Footer.module.css";
-import { useSelector, useDispatch, clearHistory } from "@/lib/redux";
+import { clearHistory, useDispatch, useSelector } from "@/lib/redux";
 import Image from "next/image";
 import Button from "../Button/Button";
+import styles from "./Footer.module.css";
 
 const Footer = () => {
 	const clickHistory = useSelector((state) => state.clickHistory);
@@ -23,9 +22,10 @@ const Footer = () => {
 					</Button>
 				</div>
 				<div>
-					{clickHistory?.images.map((c) => {
+					{clickHistory?.images.map((c, index) => {
 						return (
 							<Image
+								key={index}
 								src={c}
 								width={50}
 								height={50}

@@ -35,9 +35,9 @@ const wagmiConfig = createConfig({
 
 export default function RootLayout(props: React.PropsWithChildren) {
 	return (
-		<Providers>
-			<html lang="en">
-				<body>
+		<html lang="en">
+			<body>
+				<Providers>
 					<WagmiConfig config={wagmiConfig}>
 						<RainbowKitProvider chains={chains}>
 							<header>
@@ -49,8 +49,8 @@ export default function RootLayout(props: React.PropsWithChildren) {
 							<Footer />
 						</RainbowKitProvider>
 					</WagmiConfig>
-				</body>
-			</html>
-		</Providers>
+				</Providers>
+			</body>
+		</html>
 	);
 }
