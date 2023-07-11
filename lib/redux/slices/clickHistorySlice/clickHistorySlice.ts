@@ -17,7 +17,6 @@ export const clickHistorySlice = createSlice({
 			if (lastItem !== action.payload) {
 				state.images.push(action.payload);
 			}
-			console.log("state", state);
 		},
 	},
 });
