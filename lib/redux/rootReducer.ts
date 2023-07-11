@@ -1,5 +1,5 @@
-import { counterSlice } from "./slices";
+import { clickHistorySlice } from "./slices";
 
 export const reducer = {
-	counter: counterSlice.reducer,
+	clickHistory: clickHistorySlice.reducer,
 };

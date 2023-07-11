@@ -1,17 +1,15 @@
 "use client";
 import { Providers } from "@/lib/providers";
-import { Nav } from "./components/Nav";
-
-import styles from "./styles/layout.module.css";
-import "./styles/globals.css";
-
-import "@rainbow-me/rainbowkit/styles.css";
-
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import "@rainbow-me/rainbowkit/styles.css";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
-import { mainnet, polygon, optimism, arbitrum, zora } from "wagmi/chains";
+import { arbitrum, mainnet, optimism, polygon, zora } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
+import Footer from "./components/Footer";
+import { Nav } from "./components/Nav";
+import "./styles/globals.css";
+import styles from "./styles/layout.module.css";
 
 const { chains, publicClient } = configureChains(
 	[mainnet, polygon, optimism, arbitrum, zora],
@@ -39,10 +37,10 @@ export default function RootLayout(props: React.PropsWithChildren) {
 	return (
 		<Providers>
 			<html lang="en">
-				<body>
+				<body id="root">
 					<WagmiConfig config={wagmiConfig}>
 						<RainbowKitProvider chains={chains}>
-							<section className={styles.container}>
+							<section>
 								<header>
 									<Nav />
 								</header>
@@ -53,6 +51,7 @@ export default function RootLayout(props: React.PropsWithChildren) {
 							</section>
 						</RainbowKitProvider>
 					</WagmiConfig>
+					<Footer />
 				</body>
 			</html>
 		</Providers>
