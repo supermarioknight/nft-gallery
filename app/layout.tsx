@@ -6,8 +6,8 @@ import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import { arbitrum, mainnet, optimism, polygon, zora } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
-import Footer from "./components/Footer";
-import { Nav } from "./components/Nav";
+import Footer from "./components/Footer/Footer";
+import { Nav } from "./components/Navbar/Nav";
 import "./styles/globals.css";
 import styles from "./styles/layout.module.css";
 
@@ -37,21 +37,18 @@ export default function RootLayout(props: React.PropsWithChildren) {
 	return (
 		<Providers>
 			<html lang="en">
-				<body id="root">
+				<body>
 					<WagmiConfig config={wagmiConfig}>
 						<RainbowKitProvider chains={chains}>
-							<section>
-								<header>
-									<Nav />
-								</header>
-
-								<main className={styles.main}>
-									{props.children}
-								</main>
-							</section>
+							<header>
+								<Nav />
+							</header>
+							<main className={styles.main}>
+								{props.children}
+							</main>
+							<Footer />
 						</RainbowKitProvider>
 					</WagmiConfig>
-					<Footer />
 				</body>
 			</html>
 		</Providers>
