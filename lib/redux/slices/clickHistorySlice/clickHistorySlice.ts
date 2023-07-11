@@ -18,7 +18,10 @@ export const clickHistorySlice = createSlice({
 				state.images.push(action.payload);
 			}
 		},
+		clearHistory: (state) => {
+			state.images = [];
+		},
 	},
 });
 
-export const { addImageToHistory } = clickHistorySlice.actions;
+export const { addImageToHistory, clearHistory } = clickHistorySlice.actions;
