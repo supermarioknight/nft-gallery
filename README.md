@@ -1,29 +1,24 @@
-# Redux Toolkit TypeScript Example
+# THREEJS WEB3 NFT GALLERY
 
-This example shows how to integrate Next.js with [Redux Toolkit](https://redux-toolkit.js.org).
+## STACK
 
-The **Redux Toolkit** is a standardized way to write Redux logic (create actions and reducers, setup the store with some default middlewares like redux devtools extension). This example demonstrates each of these features with Next.js
+NextJS
+CSS Modules
+Wagmi
+Rainbowkit
+AlchemySDK
+Redux Toolkit
+React Three Fiber
 
-## Deploy your own
+Preview: https://nft-gallery-3d.vercel.app/
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## ISSUES
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-redux&project-name=with-redux&repository-name=with-redux)
+These errors in development will need to be addressed, it's mostly related to server side HTML rendering in NextJS, for more: https://nextjs.org/docs/messages/react-hydration-error
 
-## How to use
+-   [] Error: Hydration failed because the initial UI does not match what was rendered on the server.
+-   [] Error: There was an error while hydrating. Because the error happened outside of a Suspense boundary, the entire root will switch to client rendering.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## TODOs
 
-```bash
-npx create-next-app --example with-redux with-redux-app
-```
-
-```bash
-yarn create next-app --example with-redux with-redux-app
-```
-
-```bash
-pnpm create next-app --example with-redux with-redux-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+-[] Improve types

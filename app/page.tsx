@@ -3,7 +3,6 @@ import useSWR from "swr";
 import { useAccount } from "wagmi";
 import { fetcher } from "../lib/utils";
 import Gallery from "./components/Gallery/Gallery";
-import dynamic from "next/dynamic";
 
 export default function IndexPage() {
 	const { address, isConnecting, isDisconnected } = useAccount();
