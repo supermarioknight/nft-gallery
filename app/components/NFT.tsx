@@ -1,10 +1,11 @@
 import { useDispatch } from "@/lib/redux";
-import { addImageToHistory } from "@/lib/redux/";
+import { addImageToHistory } from "@/lib/redux";
 import { useFrame, useLoader, useThree } from "@react-three/fiber";
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { TextureLoader } from "three";
 
-export const NFT = (props: any) => {
+//TODO: Improve Types
+const NFT = (props: any) => {
 	const textures = useLoader(TextureLoader, props.imgUrl);
 	const texture = Array.isArray(textures) ? textures[0] : textures;
 
@@ -57,3 +58,5 @@ export const NFT = (props: any) => {
 		</>
 	);
 };
+
+export default NFT;

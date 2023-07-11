@@ -1,10 +1,10 @@
 import React from "react";
 
-interface LogoProps {
+interface HistoryLogoProps {
 	className: string;
 }
 
-function HistoryLogo({ className }: LogoProps) {
+function HistoryLogo({ className }: HistoryLogoProps) {
 	return (
 		<svg
 			version="1.1"
