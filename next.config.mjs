@@ -9,6 +9,10 @@ const nextConfig = {
 			},
 			{
 				protocol: "https",
+				hostname: "**.seadn.io",
+			},
+			{
+				protocol: "https",
 				hostname: "**.cloudinary.com",
 			},
 		],
