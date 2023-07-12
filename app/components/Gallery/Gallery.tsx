@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber";
+import { OwnedBaseNft } from "alchemy-sdk";
 import NFT from "../NFT";
 import styles from "./gallery.module.css";
-import { OwnedBaseNft } from "alchemy-sdk";
 
 interface PictureGalleryProps {
 	images: OwnedBaseNft[] | undefined;

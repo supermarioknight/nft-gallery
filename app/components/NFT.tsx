@@ -1,8 +1,7 @@
-import { useDispatch } from "@/lib/redux";
-import { addImageToHistory } from "@/lib/redux";
+import { addImageToHistory, useDispatch } from "@/lib/redux";
 import { useFrame, useLoader } from "@react-three/fiber";
-import React, { useRef, useState, FC } from "react";
-import { TextureLoader, Mesh } from "three";
+import { useRef, useState } from "react";
+import { Mesh, TextureLoader } from "three";
 
 interface NFTProps {
 	imgUrl: string;

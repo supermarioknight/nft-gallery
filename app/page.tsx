@@ -1,9 +1,9 @@
 "use client";
+import { OwnedBaseNftsResponse } from "alchemy-sdk";
 import useSWR from "swr";
 import { useAccount } from "wagmi";
 import { fetcher } from "../lib/utils";
 import Gallery from "./components/Gallery/Gallery";
-import { OwnedBaseNftsResponse } from "alchemy-sdk";
 
 export default function IndexPage() {
 	const { address, isConnecting, isDisconnected } = useAccount();
