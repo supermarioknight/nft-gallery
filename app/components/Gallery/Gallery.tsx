@@ -1,9 +1,13 @@
 import { Canvas } from "@react-three/fiber";
 import NFT from "../NFT";
 import styles from "./gallery.module.css";
+import { OwnedBaseNft } from "alchemy-sdk";
 
-//TODO: improve types
-const PictureGallery = ({ images }: any) => {
+interface PictureGalleryProps {
+	images: OwnedBaseNft[] | undefined;
+}
+
+const PictureGallery = ({ images }: PictureGalleryProps) => {
 	return (
 		<section className={styles.pictureGallery}>
 			{images?.map((image: any, index: number) => (
