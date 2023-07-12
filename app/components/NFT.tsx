@@ -1,7 +1,7 @@
 import { useDispatch } from "@/lib/redux";
 import { addImageToHistory } from "@/lib/redux";
 import { useFrame, useLoader, useThree } from "@react-three/fiber";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { TextureLoader } from "three";
 
 //TODO: Improve Types
@@ -26,13 +26,11 @@ const NFT = (props: any) => {
 		setClicked(!clicked);
 	};
 
-	const { size } = useThree(); // Get the size of the canvas
-
 	useFrame(({ clock }) => {
 		if (ref.current) {
 			const time = clock.getElapsedTime();
-			const positionX = Math.sin(time * 0.3) * 1; // Adjust the movement range and speed as needed
-			const positionY = Math.cos(time * 0.3) * 1; // Adjust the movement range and speed as needed
+			const positionX = Math.sin(time * 0.6) * 0.2; // Adjust the movement range and speed as needed
+			const positionY = Math.cos(time * 0.1) * 0.3; // Adjust the movement range and speed as needed
 			ref.current.position.x = positionX;
 			ref.current.position.y = positionY;
 		}
@@ -40,20 +38,17 @@ const NFT = (props: any) => {
 
 	return (
 		<>
+			<pointLight position={[10, 10, 10]} />
 			<mesh
 				{...props}
 				ref={ref}
-				scale={clicked ? [2, 2, 2] : [1, 1, 1]}
+				scale={clicked ? [4, 4, 4] : [2, 2, 2]}
 				onClick={handleClick}
 				onPointerOver={() => setHovered(true)}
 				onPointerOut={() => setHovered(false)}
 			>
 				<planeGeometry args={[planeWidth, planeHeight]} />
 				<meshBasicMaterial map={texture} />
-			</mesh>
-			<mesh>
-				<planeGeometry args={[size.width, size.height]} />
-				<meshBasicMaterial color="transparent" visible={false} />
 			</mesh>
 		</>
 	);

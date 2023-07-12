@@ -7,6 +7,10 @@ import Gallery from "./components/Gallery/Gallery";
 export default function IndexPage() {
 	const { address, isConnecting, isDisconnected } = useAccount();
 	const { data } = useSWR(address, fetcher);
+	console.log(
+		`🍀 \n | 🍄 file: page.tsx:10 \n | 🍄 IndexPage \n | 🍄 data:`,
+		data
+	);
 	if (isConnecting) return <p>Onboarding…</p>;
 	if (isDisconnected) return <p>Disconnected</p>;
 
