@@ -29,23 +29,3 @@
 	color: #333;
 	font-size: 1.2rem;
 }
-
-.footerNav {
-	margin-top: 16px;
-}
-
-.footerMenu {
-	list-style-type: none;
-	display: flex;
-}
-
-.footerItem {
-	margin-right: 16px;
-}
-
-.footerLink {
-	text-decoration: none;
-	color: #333;
-}
-
-/* Add additional styles as per your design preferences */

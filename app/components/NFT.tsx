@@ -1,15 +1,17 @@
-import { useDispatch } from "@/lib/redux";
-import { addImageToHistory } from "@/lib/redux";
-import { useFrame, useLoader, useThree } from "@react-three/fiber";
-import React, { useRef, useState, useEffect } from "react";
-import { TextureLoader } from "three";
+import { addImageToHistory, useDispatch } from "@/lib/redux";
+import { useFrame, useLoader } from "@react-three/fiber";
+import { useRef, useState } from "react";
+import { Mesh, TextureLoader } from "three";
 
-//TODO: Improve Types
-const NFT = (props: any) => {
+interface NFTProps {
+	imgUrl: string;
+}
+
+const NFT = (props: NFTProps) => {
 	const textures = useLoader(TextureLoader, props.imgUrl);
 	const texture = Array.isArray(textures) ? textures[0] : textures;
 
-	const ref = useRef<THREE.Mesh>();
+	const ref = useRef<Mesh>(null);
 	const [hovered, setHovered] = useState(false);
 	const [clicked, setClicked] = useState(false);
 
