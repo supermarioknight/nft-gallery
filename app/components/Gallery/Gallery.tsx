@@ -12,8 +12,9 @@ const PictureGallery = ({ images }: any) => {
 						<Canvas key={index}>
 							<NFT
 								imgUrl={
-									image.media[0].thumbnail ||
-									image.contract.openSea.imageUrl
+									image.media.length < 1
+										? image.contract.openSea.imageUrl
+										: image.media[0].thumbnail
 								}
 							/>
 						</Canvas>
