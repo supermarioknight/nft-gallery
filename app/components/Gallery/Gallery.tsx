@@ -10,7 +10,12 @@ const PictureGallery = ({ images }: any) => {
 				<div className={styles.canvasContainer}>
 					<div className={styles.canvas}>
 						<Canvas key={index}>
-							<NFT imgUrl={image.contract.openSea.imageUrl} />
+							<NFT
+								imgUrl={
+									image.media[0].thumbnail ||
+									image.contract.openSea.imageUrl
+								}
+							/>
 						</Canvas>
 					</div>
 					<div className={styles.textContainer}>
