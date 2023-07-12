@@ -7,10 +7,12 @@ CSS Modules
 Wagmi
 Rainbowkit
 AlchemySDK
-Redux Toolkit
-React Three Fiber
+ReduxToolkit
+ReactThreeFiber
 
 Preview: https://nft-gallery-3d.vercel.app/
+
+To run the project use `yarn dev`
 
 ## ISSUES
 
