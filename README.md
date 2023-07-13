@@ -6,13 +6,14 @@ A NFT Gallery that allows you to connect your crypto wallet and display your NFT
 
 ## Table of Contents
 
-- [NFT GALLERY](#nft-gallery)
-  - [Table of Contents](#table-of-contents)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Features](#features)
-  - [License](#license)
-  - [Acknowledgements](#acknowledgements)
+-   [NFT GALLERY](#nft-gallery)
+    -   [Table of Contents](#table-of-contents)
+    -   [Installation](#installation)
+    -   [Usage](#usage)
+    -   [Features](#features)
+    -   [License](#license)
+    -   [Acknowledgements](#acknowledgements)
+        -   [Hydration Error with Wagmi Library in Next.js](#hydration-error-with-wagmi-library-in-nextjs)
 
 ## Installation
 
@@ -72,3 +73,9 @@ Mention any resources, libraries, or tutorials that were helpful in developing y
 -   [AlchemySDK](https://www.alchemy.com/sdk)
 -   [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
 -   [Jest](https://jestjs.io/)
+
+### Hydration Error with Wagmi Library in Next.js
+
+This README addresses a known issue with the Wagmi library in Next.js, which triggers a hydration error. Fortunately, there are several workarounds available, which are discussed in detail in this [thread](https://github.com/j-yw/nft-gallery-3d/blob/c2a7975741a5c68662d95c3eb2abcc3379ef83f6/app/layout.tsx#L31).
+
+One of the solution implemented to this problem is posted [here](https://github.com/WalletConnect/web3modal-examples/pull/5)
