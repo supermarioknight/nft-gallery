@@ -16,10 +16,29 @@ A NFT Gallery that allows you to connect your crypto wallet and display your NFT
 
 ## Installation
 
-Install Dependencies: `yarn`
-Start the project: `yarn dev`
-Build the proejct: `yarn build`
-Test the project: `yarn test`
+Install Dependencies:
+
+```
+yarn
+```
+
+Start the project:
+
+```
+yarn dev
+```
+
+Build the proejct:
+
+```
+yarn build
+```
+
+Test the project:
+
+```
+yarn test
+```
 
 You'll need to setup 2 env vars as well, refer to the `env.sample.local` file
 
