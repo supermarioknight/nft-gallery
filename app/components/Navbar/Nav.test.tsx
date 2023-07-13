@@ -1,7 +1,5 @@
-import React from "react";
-import { render, screen } from "@testing-library/react";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
-import Logo from "../icons/Logo";
+import { render, screen } from "@testing-library/react";
 import { Nav } from "./Nav";
 
 jest.mock("@rainbow-me/rainbowkit", () => ({

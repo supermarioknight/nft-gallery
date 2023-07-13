@@ -28,6 +28,7 @@ const { connectors } = getDefaultWallets({
 });
 
 const wagmiConfig = createConfig({
+	// keep autoConnect at false to avoid hydration errors in nextjs
 	autoConnect: false,
 	connectors,
 	publicClient,
