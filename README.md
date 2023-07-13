@@ -76,6 +76,6 @@ Mention any resources, libraries, or tutorials that were helpful in developing y
 
 ### Hydration Error with Wagmi Library in Next.js
 
-This README addresses a known issue with the Wagmi library in Next.js, which triggers a hydration error. Fortunately, there are several workarounds available, which are discussed in detail in this [thread](https://github.com/j-yw/nft-gallery-3d/blob/c2a7975741a5c68662d95c3eb2abcc3379ef83f6/app/layout.tsx#L31).
+This README addresses a known issue with the Wagmi library in Next.js, which triggers a hydration error. Fortunately, there are several workarounds available, which are discussed in detail in this [thread](https://github.com/wagmi-dev/wagmi/issues/542).
 
 One of the solution implemented to this problem is posted [here](https://github.com/WalletConnect/web3modal-examples/pull/5)
