@@ -33,9 +33,10 @@ List the key features of your project. Highlight what makes it unique and useful
 
 -   Use your own cryto wallet to connect to the website and view your NFTs
 
-> Wagmi and Rainbowkit for web3 connections, AlchemySDK for fetching the NFT data. There's also EthersJS which can be used to write custom hooks.
+    > Wagmi and Rainbowkit for web3 connections, AlchemySDK for fetching the NFT data. There's also EthersJS which can be used to write custom hooks.
 
 -   Click on NFT images to zoom in and keeps tracks of your click history
+
     > Using React Three Fiber to load images into canvas and movement, Redux toolkit is being used to manage state globly, the click history state is managed by redux, that data is being used in the footer component for display the click history.
 
 ## License
