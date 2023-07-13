@@ -6,13 +6,13 @@ A NFT Gallery that allows you to connect your crypto wallet and display your NFT
 
 ## Table of Contents
 
--   [Project Name](#project-name)
-    -   [Table of Contents](#table-of-contents)
-    -   [Installation](#installation)
-    -   [Usage](#usage)
-    -   [Features](#features)
-    -   [License](#license)
-    -   [Acknowledgements](#acknowledgements)
+- [Project Name](#project-name)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Features](#features)
+  - [License](#license)
+  - [Acknowledgements](#acknowledgements)
 
 ## Installation
 
