@@ -1,4 +1,4 @@
-# Project Name
+# NFT GALLERY
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
@@ -6,7 +6,7 @@ A NFT Gallery that allows you to connect your crypto wallet and display your NFT
 
 ## Table of Contents
 
-- [Project Name](#project-name)
+- [NFT GALLERY](#nft-gallery)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
