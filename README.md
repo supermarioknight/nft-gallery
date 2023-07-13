@@ -2,33 +2,17 @@
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-<<<<<<< HEAD
-NextJS
-CSS Modules
-Wagmi
-Rainbowkit
-AlchemySDK
-ReduxToolkit
-ReactThreeFiber
-=======
 A NFT Gallery that allows you to connect your crypto wallet and display your NFTs.
->>>>>>> release/0.7.0
 
 ## Table of Contents
 
-<<<<<<< HEAD
-To run the project use `yarn dev`
-
-## ISSUES
-=======
--   [Project Name](#project-name)
-    -   [Table of Contents](#table-of-contents)
-    -   [Installation](#installation)
-    -   [Usage](#usage)
-    -   [Features](#features)
-    -   [License](#license)
-    -   [Acknowledgements](#acknowledgements)
->>>>>>> release/0.7.0
+- [Project Name](#project-name)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Features](#features)
+  - [License](#license)
+  - [Acknowledgements](#acknowledgements)
 
 ## Installation
 
