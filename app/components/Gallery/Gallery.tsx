@@ -1,3 +1,4 @@
+"use client";
 import { Canvas } from "@react-three/fiber";
 import { OwnedBaseNft } from "alchemy-sdk";
 import NFT from "../NFT";
@@ -9,11 +10,11 @@ interface PictureGalleryProps {
 
 const PictureGallery = ({ images }: PictureGalleryProps) => {
 	return (
-		<section className={styles.pictureGallery}>
+		<div className={styles.pictureGallery}>
 			{images?.map((image: any, index: number) => (
-				<div className={styles.canvasContainer}>
+				<div className={styles.canvasContainer} key={index}>
 					<div className={styles.canvas}>
-						<Canvas key={index}>
+						<Canvas>
 							<NFT
 								imgUrl={
 									image.media.length < 1
@@ -32,7 +33,7 @@ const PictureGallery = ({ images }: PictureGalleryProps) => {
 					</div>
 				</div>
 			))}
-		</section>
+		</div>
 	);
 };
 
