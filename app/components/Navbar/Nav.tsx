@@ -5,14 +5,16 @@ import styles from "./nav.module.css";
 
 export const Nav = () => {
 	return (
-		<header className={styles.navbar}>
+		<header className={styles.navbar} data-testid="navbar">
 			<nav className={styles.navbarContainer}>
 				<div className={styles.navbarBrand}>
 					<a href="/" className={styles.navbarLogo}>
 						<Logo className={styles.navbarLogo} />
 					</a>
 				</div>
-				<ConnectButton />
+				<div data-testid="wallet-button">
+					<ConnectButton />
+				</div>
 			</nav>
 		</header>
 	);
