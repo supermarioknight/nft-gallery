@@ -8,11 +8,13 @@ import Gallery from "./components/Gallery/Gallery";
 export default function IndexPage() {
 	const { address, isConnecting, isDisconnected } = useAccount();
 	const { data } = useSWR<OwnedBaseNftsResponse>(address, fetcher);
+
 	if (isConnecting) return <p>Onboarding…</p>;
 	if (isDisconnected) return <p>Disconnected</p>;
+
 	return (
 		<div>
-			<Gallery images={!isDisconnected && data?.ownedNfts} />
+			<Gallery images={data?.ownedNfts} />
 		</div>
 	);
 }
